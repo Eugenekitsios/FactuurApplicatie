@@ -1,0 +1,22 @@
+server:
+  port: 9090
+
+spring:
+  application:
+    name: Oauth server
+  main:
+    banner-mode: 'off'
+  datasource:
+    url: jdbc:mysql://localhost:3307/invoice
+    platform: mysql
+    username: root
+    password: 
+    driverClassName: com.mysql.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+        
+hibernate:
+  dialect:
+    storage-engine:innodb  
+
